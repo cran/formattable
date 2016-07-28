@@ -4,17 +4,23 @@
 \alias{color_bar}
 \title{Create a color-bar formatter}
 \usage{
-color_bar(color, ...)
+color_bar(color = "lightgray", fun = "proportion", ...)
 }
 \arguments{
 \item{color}{the background color of the bars}
 
-\item{...}{parameters passed to \code{normalize} function.}
+\item{fun}{the transform function that maps the input vector to
+values from 0 to 1. Uses \code{proportion} by default.}
+
+\item{...}{additional parameters passed to \code{fun}}
 }
 \description{
 Create a color-bar formatter
 }
 \examples{
-formattable(mtcars, list(mpg = color_bar("pink", 0.2)))
+formattable(mtcars, list(mpg = color_bar("lightgray", proportion)))
+}
+\seealso{
+\link{normalize_bar}, \link{proportion_bar}
 }
 
