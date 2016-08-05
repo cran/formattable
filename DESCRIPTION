@@ -1,6 +1,6 @@
 Package: formattable
 Title: Create 'Formattable' Data Structures
-Version: 0.2
+Version: 0.2.0.1
 Authors@R: c(
     person("Kun", "Ren", role = c("aut", "cre"), email = "ken@renkun.me"),
     person("Kenton", "Russell", role = "aut", email = "kent.russell@timelyportfolio.com")
@@ -11,7 +11,7 @@ Description: Provides functions to create formattable vectors and data frames.
     to improve the readability of data presented in tabular form rendered in
     web pages.
 Depends: R (> 3.0.2)
-Date: 2016-07-28
+Date: 2016-08-05
 Imports: methods, htmltools, htmlwidgets, knitr, rmarkdown
 License: MIT + file LICENSE
 LazyData: true
@@ -19,13 +19,13 @@ URL: https://renkun.me/formattable,
         https://github.com/renkun-ken/formattable
 BugReports: https://github.com/renkun-ken/formattable/issues
 ByteCompile: TRUE
-Suggests: testthat, DT, shiny
+Suggests: testthat, DT, shiny, covr
 RoxygenNote: 5.0.1
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2016-07-28 08:16:11 UTC; renkun
+Packaged: 2016-08-05 01:44:15 UTC; renkun
 Author: Kun Ren [aut, cre],
   Kenton Russell [aut]
 Maintainer: Kun Ren <ken@renkun.me>
 Repository: CRAN
-Date/Publication: 2016-07-28 11:46:38
+Date/Publication: 2016-08-05 11:53:18

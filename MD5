@@ -1,10 +1,10 @@
-cdc471c78cf1c27393237958d21a40eb *DESCRIPTION
+89ab8a6cd8e5b94118ffb8aff2b51489 *DESCRIPTION
 d29fa4547099429efa4dea80d64f3b43 *LICENSE
 c70f20e741baac99048301dbe9f8bbdf *NAMESPACE
 618677ad94059fb0fefdff0ace72f283 *NEWS
 14f5262bbee86ce573ac09e47eeccd91 *R/as.datatable.R
 9c0bf2610911cff9a26571f870b5c21b *R/formats.R
-4aeb5c59a34773c96664aa26d13c2df3 *R/formattable.R
+52058d2094434b539743545c43671b5d *R/formattable.R
 a7c8ad4841c4de656f77cfc6dd1c4771 *R/formatter.R
 4d64b2e5a541decc09e8bad617bcf0ad *R/package.R
 21df5875a5235ade5619cca6477410eb *R/render.R
@@ -15,10 +15,10 @@ c0890919922cf982f5ec9328f79140e3 *R/transform.R
 05a2d9fc11b0a8f19df984128fb68996 *build/vignette.rds
 12d158d3fe7e672c046bfd0e1bf26b93 *inst/doc/formattable-data-frame.R
 0776a24fe22b566d3cc8f0e36adf573c *inst/doc/formattable-data-frame.Rmd
-c948146778cba85f6a699db4a7b7cb41 *inst/doc/formattable-data-frame.html
+b31b88b8ed87770375546d95f29b6dd8 *inst/doc/formattable-data-frame.html
 943bf0b8d5dc0a5cf32e7125ba85b191 *inst/doc/introduction.R
 e96bbbc7f50dfd47362327e4b915cd22 *inst/doc/introduction.Rmd
-f5a76faf9d088688ddc994384ac35117 *inst/doc/introduction.html
+93fc59b9d690d6f12cd696d9e9b388dd *inst/doc/introduction.html
 f960d3c23aac2a278b564ebc911afac6 *inst/htmlwidgets/formattable_widget.js
 d41d8cd98f00b204e9800998ecf8427e *inst/htmlwidgets/formattable_widget.yaml
 6fe89eebbd337318f70cf85120f3a570 *man/accounting.Rd
@@ -64,7 +64,7 @@ da51ab1f656da3890141767d96c80fb2 *man/style.Rd
 8047ff4fa93377bc09fc27017de1e749 *man/vmap.Rd
 363b1ffe259e55ad6b33d96c928732b6 *tests/testthat.R
 532d6c887b412dad1cb2883551a55329 *tests/testthat/test-formats.R
-dbd8756bcd54b759b83307d99fcb8ad6 *tests/testthat/test-formattable.R
+ec61639f787ce5590a08414d892ac427 *tests/testthat/test-formattable.R
 ace7523ff38b8138ac116130da246c32 *tests/testthat/test-formatter.R
 6a93c8867165e082ef13f61466d3e603 *tests/testthat/test-render.R
 2f9d0450fa6ba9ec793d9db5a38399b8 *tests/testthat/test-style.R
