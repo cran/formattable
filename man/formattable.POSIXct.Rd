@@ -4,8 +4,13 @@
 \alias{formattable.POSIXct}
 \title{Create a formattable POSIXct vector}
 \usage{
-\method{formattable}{POSIXct}(x, ..., formatter = "format.POSIXct",
-  preproc = NULL, postproc = NULL)
+\method{formattable}{POSIXct}(
+  x,
+  ...,
+  formatter = "format.POSIXct",
+  preproc = NULL,
+  postproc = NULL
+)
 }
 \arguments{
 \item{x}{a vector of class \code{POSIXct}.}
@@ -32,4 +37,3 @@ ftimes <- formattable(times, format = "\%Y\%m\%dT\%H\%M\%S")
 ftimes
 ftimes + 30
 }
-

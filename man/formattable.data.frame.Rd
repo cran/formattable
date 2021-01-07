@@ -4,8 +4,13 @@
 \alias{formattable.data.frame}
 \title{Create a formattable data frame}
 \usage{
-\method{formattable}{data.frame}(x, ..., formatter = "format_table",
-  preproc = NULL, postproc = NULL)
+\method{formattable}{data.frame}(
+  x,
+  ...,
+  formatter = "format_table",
+  preproc = NULL,
+  postproc = NULL
+)
 }
 \arguments{
 \item{x}{a \code{data.frame}}
@@ -84,4 +89,3 @@ formattable(df, list(area(1:5) ~ color_tile("transparent", "lightgray"),
 \seealso{
 \link{format_table}, \link{area}
 }
-

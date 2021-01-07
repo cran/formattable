@@ -4,10 +4,15 @@
 \alias{icontext}
 \title{Create icon-text elements}
 \usage{
-icontext(icon, text = list(NULL), ..., simplify = TRUE,
+icontext(
+  icon,
+  text = list(NULL),
+  ...,
+  simplify = TRUE,
   provider = getOption("formattable.icon.provider", "glyphicon"),
   class_template = getOption("formattable.icon.class_template",
-  "{provider} {provider}-{icon}"))
+    "{provider} {provider}-{icon}")
+)
 }
 \arguments{
 \item{icon}{a character vector or list of character vectors
@@ -36,7 +41,6 @@ icontext(ifelse(mtcars$mpg > mean(mtcars$mpg), "plus", "minus"), mtcars$mpg)
 icontext(list(rep("star",3), rep("star",2)), c("item 1", "item 2"))
 }
 \seealso{
-\href{http://getbootstrap.com/components/#glyphicons}{Glyphicons in Bootstrap},
-\href{http://glyphicons.com/}{Glyphicons}
+\href{https://getbootstrap.com/docs/3.4/components/#glyphicons}{Glyphicons in Bootstrap},
+\href{https://glyphicons.com/}{Glyphicons}
 }
-

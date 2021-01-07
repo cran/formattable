@@ -1,50 +1,14 @@
 # formattable
 
-[![Linux Build Status](https://travis-ci.org/renkun-ken/formattable.png?branch=master)](https://travis-ci.org/renkun-ken/formattable) 
-[![Windows Build status](https://ci.appveyor.com/api/projects/status/github/renkun-ken/formattable?svg=true)](https://ci.appveyor.com/project/renkun-ken/formattable)
-[![codecov.io](http://codecov.io/github/renkun-ken/formattable/coverage.svg?branch=master)](http://codecov.io/github/renkun-ken/formattable?branch=master)
-[![CRAN Version](http://www.r-pkg.org/badges/version/formattable)](https://cran.r-project.org/package=formattable)
+<!-- badges: start -->
+[![R build status](https://github.com/renkun-ken/formattable/workflows/rcc/badge.svg)](https://github.com/renkun-ken/formattable/actions)
+[![codecov.io](https://codecov.io/github/renkun-ken/formattable/coverage.svg?branch=master)](https://codecov.io/github/renkun-ken/formattable?branch=master)
+[![CRAN Version](https://www.r-pkg.org/badges/version/formattable)](https://cran.r-project.org/package=formattable)
+<!-- badges: end -->
 
 This package is designed for applying formatting on vectors and data frames to make data presentation easier, richer, more flexible and hopefully convey more information.
 
-This document is also translated into [日本語](./README.ja.md) by [@hoxo_m](https://github.com/hoxo-m), [@dichika](https://github.com/dichika) and [@teramonagi](https://github.com/teramonagi).
-
-## What's New?
-
-### Version 0.2
-
-#### Breaking changes
-
-* `format_table` now renders input data frame to `html` by default instead of `markdown`.
-* `formattable.matrix` is removed to support matrix/array formatting. Explicitly convert matrix to data frame if you want to create a formattable data frame.
-* `format_table` and `formattable.data.frame` no longer accepts `check.rows` and `check.names` arguments. `row.names` accepts a logical value and is directly passed to `knitr::kable`.
-
-#### New features
-
-* `formattable` and built-in formatter functions (e.g. `percent`) now work with matrix and array objects.
-* Area formatting is now supported (discussed in #36, #40) with `area(row, col) ~ formatter`. See examples via `?formattable.data.frame`.
-* Now a formattable data frame can be converted to `DT::datatable` via `formattable::as.datatable`.
-* `FALSE` formatters can be used to hide columns of a data frame.
-
-#### Enhancements
-
-* The rendered HTML table now supports customizable CSS styling via `table_attr` argument. (#57)
-* `color_bar` now uses `proportion` by default as the rescaling function.
-
-#### Bug fixes
-
-* Fixes an encoding problem rendering formattable data frame. (#30)
-* Fixes the size and alignment issues in color bar. (#49)
-* `format.formattable` now preserves the names of input vector. (#56)
-
-### Version 0.1.7
-
-#### Breaking changes
-
-* `color_bar` is now broken into two versions using different transform functions:
-  `normalize_bar` uses `normalize`, the same as `color_bar` in previous versions,
-  and `proportion_bar` uses newly introduced `proportion` as `x / max(abs(x))` to
-  create bars of proportional width. (#42, #49)
+This document is also translated into [日本語](https://github.com/renkun-ken/formattable/blob/master/README.ja.md) by [@hoxo_m](https://github.com/hoxo-m), [@dichika](https://github.com/dichika) and [@teramonagi](https://github.com/teramonagi).
 
 ## Install
 
@@ -142,9 +106,9 @@ p
 
 ## Formatting tables in dynamic document
 
-In a typical workflow of dynamic document production, [knitr](https://github.com/yihui/knitr) and [rmarkdown](http://rmarkdown.rstudio.com/) are powerful tools to render documents with R code to different types of portable documents.
+In a typical workflow of dynamic document production, [knitr](https://yihui.org/knitr/) and [rmarkdown](https://rmarkdown.rstudio.com/) are powerful tools to render documents with R code to different types of portable documents.
 
-knitr is able to render an RMarkdown document (markdown document with R code chunks) to Markdown document. rmarkdown calls [pandoc](http://johnmacfarlane.net/pandoc) to render a markdown document to HTML web page. To put a table (`data.frame` in R) on the page, one may call `knitr::kable` to produce its markdown representation. By default the resulted table is in a plain theme with no additional formatting. However, in some cases, additional formatting may help clarify the information and make contrast of the data. This package provides functions to produce formatted tables in dynamic documents.
+knitr is able to render an RMarkdown document (markdown document with R code chunks) to Markdown document. rmarkdown calls [pandoc](https://johnmacfarlane.net/pandoc) to render a markdown document to HTML web page. To put a table (`data.frame` in R) on the page, one may call `knitr::kable` to produce its markdown representation. By default the resulted table is in a plain theme with no additional formatting. However, in some cases, additional formatting may help clarify the information and make contrast of the data. This package provides functions to produce formatted tables in dynamic documents.
 
 
 ```r
@@ -203,9 +167,9 @@ formattable(df, list(
 ))
 ```
 
-![formattable](./formattable.png?raw=true)
+![formattable](formattable.png)
 
-**The icon set used in the table is by [GLYPHICONS.com](http://GLYPHICONS.com) and included in [Bootstrap](http://getbootstrap.com/components/#glyphicons).**
+**The icon set used in the table is by [GLYPHICONS.com](https://GLYPHICONS.com) and included in [Bootstrap](https://getbootstrap.com/docs/3.4/components/#glyphicons).**
 
 ## `htmlwidget` conversion in interactive environments
 
@@ -213,4 +177,4 @@ formattable(df, list(
 
 ## License
 
-This package is under [MIT License](http://opensource.org/licenses/MIT).
+This package is under [MIT License](https://opensource.org/licenses/MIT).

@@ -2,17 +2,30 @@
 % Please edit documentation in R/formats.R
 \name{currency}
 \alias{currency}
-\alias{currency.character}
 \alias{currency.default}
+\alias{currency.character}
 \title{Numeric vector with currency format}
 \usage{
 currency(x, symbol, digits, format = "f", big.mark = ",", ...)
 
-\method{currency}{default}(x, symbol = "$", digits = 2L, format = "f",
-  big.mark = ",", ..., sep = "")
+\method{currency}{default}(
+  x,
+  symbol = "$",
+  digits = 2L,
+  format = "f",
+  big.mark = ",",
+  ...,
+  sep = ""
+)
 
-\method{currency}{character}(x, symbol = get_currency_symbol(x),
-  digits = max(get_digits(x)), format = "f", big.mark = ",", ...)
+\method{currency}{character}(
+  x,
+  symbol = get_currency_symbol(x),
+  digits = max(get_digits(x)),
+  format = "f",
+  big.mark = ",",
+  ...
+)
 }
 \arguments{
 \item{x}{a numeric vector.}
@@ -34,11 +47,10 @@ Numeric vector with currency format
 }
 \examples{
 currency(200000)
-currency(200000, "\\U20AC")
+currency(200000, "\U20AC")
 currency(1200000, "USD", sep = " ")
 currency(1200000, "USD", format = "d", sep = " ")
 currency("$ 120,250.50")
 currency("HK$ 120,250.50", symbol = "HK$")
 currency("HK$ 120, 250.50")
 }
-

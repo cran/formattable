@@ -24,7 +24,7 @@ ifelse <- function(test, yes, no, ...) {
 
 remove_class <- function(x, class) {
   cls <- class(x)
-  class(x) <- cls[!(cls %in% class)]
+  class(x) <- cls[cls != class]
   x
 }
 
@@ -56,10 +56,6 @@ cop_create_obj <- function(op, class, x, y) {
 
 call_or_default <- function(FUN, X, ...) {
   if (is.null(FUN)) X else match.fun(FUN)(X, ...)
-}
-
-format_default <- function(x, ...) {
-  format(x = x, ..., trim = TRUE)
 }
 
 eval_formula <- function(x, var, data, envir = environment(x)) {

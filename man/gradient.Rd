@@ -4,8 +4,7 @@
 \alias{gradient}
 \title{Create a matrix from vector to represent colors in gradient}
 \usage{
-gradient(x, min.color, max.color, alpha = NULL, use.names = TRUE,
-  na.rm = TRUE)
+gradient(x, min.color, max.color, alpha = NULL, use.names = TRUE, na.rm = TRUE)
 }
 \arguments{
 \item{x}{a numeric vector.}
@@ -39,4 +38,3 @@ gradient(c(1,3,2,4,5), rgb(0,0,0,0.5), rgb(0,0,0,1), alpha = TRUE)
 \seealso{
 \code{\link{csscolor}}
 }
-
